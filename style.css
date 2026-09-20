@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "ITC Machine";
-    src: url("assets/font/ITC Machine Regular.otf");
+    src: url("assets/font/ITC%20Machine%20Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
