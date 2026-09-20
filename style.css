@@ -3,9 +3,10 @@
 
 @font-face {
     font-family: "ITC Machine";
-    src: url("assets/font/ITC%20Machine%20Regular.otf") format("opentype");
+    src: url("MachineITCbyBT-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Univers Regular";
