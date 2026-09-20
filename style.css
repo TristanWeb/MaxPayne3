@@ -3,19 +3,19 @@
 
 @font-face {
     font-family: "ITC Machine";
-    src: url("/assets/font/ITC Machine Regular.otf");
+    src: url("assets/font/ITC Machine Regular.otf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Univers Regular";
-    src: url("/assets/font/UniversRegular.ttf") format('truetype');
+    src: url("assets/font/UniversRegular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Univers Bold";
-    src: url("/assets/font/UniversBold.ttf") format('truetype');
+    src: url("assets/font/UniversBold.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -252,31 +252,31 @@ nav {
 }
 
 .visualNovelCardItem.VN1_1{
-    background-image: url(/assets/img/VN1.1.png);
+    background-image: url(assets/img/VN1.1.png);
 }
 .visualNovelCardItem.VN1_2{
-    background-image: url(/assets/img/VN1.2.png);
+    background-image: url(assets/img/VN1.2.png);
 }
 .visualNovelCardItem.VN1_3{
-    background-image: url(/assets/img/VN1.3.png);
+    background-image: url(assets/img/VN1.3.png);
 }
 .visualNovelCardItem.VN2_1{
-    background-image: url(/assets/img/VN2.1.png);
+    background-image: url(assets/img/VN2.1.png);
 }
 .visualNovelCardItem.VN2_2{
-    background-image: url(/assets/img/VN2.2.png);
+    background-image: url(assets/img/VN2.2.png);
 }
 .visualNovelCardItem.VN2_3{
-    background-image: url(/assets/img/VN2.3.png);
+    background-image: url(assets/img/VN2.3.png);
 }
 .visualNovelCardItem.VN3_1{
-    background-image: url(/assets/img/VN3.1.png);
+    background-image: url(assets/img/VN3.1.png);
 }
 .visualNovelCardItem.VN3_2{
-    background-image: url(/assets/img/VN3.2.png);   
+    background-image: url(assets/img/VN3.2.png);   
 }
 .visualNovelCardItem.VN3_3{
-    background-image: url(/assets/img/VN3.3.png);   
+    background-image: url(assets/img/VN3.3.png);   
 }
 .scriptBox{
     display: block;
