@@ -1,0 +1,911 @@
+/* PROBLEME AVEC LA TYPO GRAPHITE ET CENTRER LA SCRIPTBOX */
+
+
+@font-face {
+    font-family: "ITC Machine";
+    src: url("/assets/font/ITC Machine Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Univers Regular";
+    src: url("/assets/font/UniversRegular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Univers Bold";
+    src: url("/assets/font/UniversBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Font style */
+
+/* 
+title--xl = h1
+title--l = h2
+title = h3
+title--s = h4
+*/
+
+/* MOBILE*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+body{
+margin: 0;
+background-color: #000000;
+font-family: "Univers Regular", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.8px;
+color: white;
+}
+
+.title.active{
+    color: #DF1637;
+}
+
+.title{
+font-family: "ITC Machine", sans-serif;
+font-size: 37.9px;
+font-style: normal;
+font-weight: 500;
+line-height: 44px;
+color: white;
+}
+.title-xl{
+font-size: 67.34px;
+ line-height: 66px;
+ color: #DF1637;
+}
+.title-l{
+font-family: "ITC Machine", sans-serif;
+font-size: 50.52px;
+line-height: 44px;
+margin-bottom: 0;
+
+}
+.title-s{
+font-family: "ITC Machine", sans-serif;
+font-size: 28.43px;
+line-height: 22px;
+
+}
+h3{
+margin: 0;
+}
+
+p.script{
+font-family: "graphite-std-narrow", sans-serif;
+font-size: 23px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+color: #000;
+}
+
+ul.caption{
+font-family: "Univers Regular", sans-serif;
+font-size: 14px;
+line-height: 22px;
+}
+p.caption-bold{
+font-family: "Univers Bold", sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 22px;
+}
+
+.visualNovelSection{
+    padding: 0 16px;
+}
+.visualNovelCardText{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.visualNovelList{
+    display: flex;
+    flex-direction: column;
+}
+.visualNovelCard{
+    width: 100%;
+}
+.topNav {
+    width: 250px;     
+    height: 100vh;     
+    position: fixed;
+    top: 0;
+    right: -250px;      
+    z-index: 1000;
+    background-color: #000;
+    transition: right 0.4s ease; 
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px; 
+    align-items: center;
+}
+
+
+.topNav.open {
+    right: 0; 
+}
+
+.navLinksList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.navLinksList a{
+    color: white;
+    padding: 16px 32px;
+}
+.navLinksList li a{
+    text-decoration: none;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    position: relative;
+    padding: 16px 16px;
+}
+
+
+.herovideo.home{
+    width: 100%;
+    min-height: 220px;
+}
+
+.heroimg.histoire{
+    background-image: url(assets/img/mpBgHistoireHero.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    background-position: right;
+    
+}
+.heroimg.credits{
+    background-image: url(assets/img/CreditBg.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    background-position: right;
+}
+.creditsSection{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 0 16px;
+    margin-bottom: 40px;
+}
+.linkCardItem ul{
+    text-decoration: none;
+    justify-content: left;
+    padding: 0 16px 16px 16px;
+    list-style-image: url('assets/img/BulletPointLight.png');
+}
+
+.linkCardItem li a{
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    color: white;
+    text-decoration: none;
+}
+.linkCardItem .title{
+    margin-bottom: 0;
+}
+.visualNovelCardList {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+.visualNovelCardItem{
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 9/18;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #333;
+    background-color: rgb(6, 35, 6);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    position: relative;
+}
+.visualNovelSection h2{
+    margin-bottom: 32px; 
+}
+
+.visualNovelCardItem.VN1_1{
+    background-image: url(/assets/img/VN1.1.png);
+}
+.visualNovelCardItem.VN1_2{
+    background-image: url(/assets/img/VN1.2.png);
+}
+.visualNovelCardItem.VN1_3{
+    background-image: url(/assets/img/VN1.3.png);
+}
+.visualNovelCardItem.VN2_1{
+    background-image: url(/assets/img/VN2.1.png);
+}
+.visualNovelCardItem.VN2_2{
+    background-image: url(/assets/img/VN2.2.png);
+}
+.visualNovelCardItem.VN2_3{
+    background-image: url(/assets/img/VN2.3.png);
+}
+.visualNovelCardItem.VN3_1{
+    background-image: url(/assets/img/VN3.1.png);
+}
+.visualNovelCardItem.VN3_2{
+    background-image: url(/assets/img/VN3.2.png);   
+}
+.visualNovelCardItem.VN3_3{
+    background-image: url(/assets/img/VN3.3.png);   
+}
+.scriptBox{
+    display: block;
+    position: absolute;
+    color: #000;
+    background-color:#A5B1B1;
+    border: 2px solid #000;
+    padding: 0 16px;
+    bottom: 120px;
+    right: 99px;
+    left: 18px;
+}
+
+.scriptBoxList{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.heroText{
+    padding: 0 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.heroText h1{
+    margin-bottom: 0;
+}
+
+.gameplaySection{
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+.gameplaySection h2{
+    margin-bottom: 0px;
+}
+.gameplaySection h3{
+    margin-bottom: 0px;
+}
+.gameplayCard video{
+    width: 100%;
+}
+
+.infoSection.home{
+    padding: 0 16px;
+}
+
+.infoSection.home h2{
+    margin-bottom: 0px;
+}
+.infoList{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+}
+.infoCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCard h1{
+    margin: 0;
+}
+
+.infoCard h4{
+    margin: 0;
+}
+.narrativeSection{
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+}
+.narrativeIntro{
+    width: 100%;
+}
+.narrativeIntro img{
+    width: 100%;
+}
+.narrativeSection h2{
+    margin-bottom: 0;
+}
+.narrativeTextBox p{
+    width: 100%;
+
+}
+.narrativeExperience{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+    align-self: center;
+}
+.narrativeExperience a{
+    margin: auto;
+}
+.narrativeExperience p{
+    padding-bottom: 23px;
+}
+
+.button{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #470510;
+    text-decoration:none;
+    cursor: pointer;
+    margin: 0;
+}
+.button:hover{
+    background-color: #DF1637;
+
+}
+a.button{
+    color: white;
+    width: 100%;  
+    max-width: 360px;  
+}
+.infoSection.histoire{
+    padding: 16px;
+}
+footer{
+    border-top: 2px solid #DF1637;
+    background-color: rgb(0, 0, 0);
+    padding: 0 16px;
+}
+footer .title{
+    margin-bottom: 23px;
+}
+
+.footerLinksList.p{
+    width: 100%;
+}
+
+footer.title.title-l{
+    margin-bottom: 0px;
+}
+
+.gun{
+    alignment-baseline: auto;
+    align-self: flex-start;
+    z-index: -2;
+    scale: 0.8;
+    transform: rotate(-22.339deg);
+    position: absolute;
+    left: -40%;
+}
+
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.footerLinksList{
+    display: flex;
+    margin-bottom: 62px;
+}
+
+.sitemapList{
+    justify-content: left;
+    margin-right: 97px;
+}
+.sitemapList li{
+    padding-left: 0;
+}
+.footerLinksList ul{
+    text-decoration: none;
+    padding: 0;
+    list-style-image: url('assets/img/BulletPointLight.png');
+
+
+}
+.footerLinksList a{
+    color: white;
+    text-decoration: none;
+}
+.footerLinksList a:hover{
+    color: #DF1637;
+}
+
+@media(min-width: 795px) {
+    .title{
+    font-family: "ITC Machine", sans-serif;
+    font-size: 56.83px;
+    line-height: 75px;
+    }
+    .title-xl{
+    font-size: 100.98px;
+    line-height: 100px;
+    color: #DF1637;
+    }
+    .title-l{
+    font-size: 75.76px;
+    line-height: 100px;
+    
+    }
+    .narrativeSection h2 {
+    margin-bottom: 0;
+    }
+    .title-s{
+    font-size: 42.63px;
+    line-height: 50px;
+    }
+    p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.8px;
+    }
+    p.script{
+    font-size: 25px;
+    line-height: 25px;
+    }
+    ul.caption{
+    font-size: 16px;
+    line-height: 25px;
+    }
+    p.caption-bold{
+    font-size: 16px;
+    line-height: 25px;
+    } 
+    .openBtn, .closeBtn {
+        display: none; 
+    }
+    .visualNovelCardList{
+    max-width: 100%;
+    }
+    .topNav {
+        position: static;    
+        width: auto;
+        height: auto;
+        padding: 0;
+        background: transparent;
+        display: block;    
+    }
+
+    .navLinksList {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .navLinksList a{
+        width: fit-content;
+        display: flex;
+    }
+    .nav{
+    display: flex;
+    justify-content:space-between;
+    height: 92px;
+    padding: 0 80px;
+    align-items: center;
+    max-width: 2000px;
+    background-color: rgb(0, 0, 0);
+    }
+    .heroimg.histoire{
+        aspect-ratio: 16/9;
+    }
+    .heroimg.credits{
+        aspect-ratio: 16/9;
+    }
+    .visualNovelSection{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    }
+.visualNovelCardList {
+    max-width: 500px;
+}
+    .active{
+    color: #DF1637;
+}
+}
+
+@media(min-width: 1360px){
+
+.title{
+font-family: "ITC Machine", sans-serif;
+margin-top: 0;
+font-size: 59.99px;
+line-height: 61.9px;
+}
+.title-xl{
+font-size: 106.59px;
+line-height: 93px;
+color: #DF1637;
+}
+.title-l{
+font-size: 79.97px;
+line-height: 93px;
+}
+.title-s{
+font-size: 45px;
+line-height: 62px;
+}
+p{
+font-size: 22px;
+line-height: 31px;
+letter-spacing: -0.8px;
+color: white;
+}
+a{
+font-size: 22px;
+line-height: 31px;
+letter-spacing: -0.8px;
+color: white;
+}
+p.script{
+font-size: 35px;
+line-height: 31px;
+color: #000;
+}
+
+ul.caption{
+font-size: 22px;
+line-height: 31px;
+}
+p.caption-bold{
+font-size: 22px;
+line-height: 31px;
+}
+.hero.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.herovideo.home {
+    background-position: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.heroText p{
+    mix-blend-mode: difference;
+    color: black;
+}
+.gameplaySection{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 0 80px;
+    gap: 50px;
+}
+.cardList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:77px;
+
+}
+.gameplayCard{
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.cardText{
+    width: 50%;
+}
+.gameplayCard.reverse{
+    flex-direction: row-reverse;
+}
+
+.gameplayCard video{
+    height: Auto;
+    width: 55%;
+    object-fit: cover; 
+}
+.infoSection.home {
+    padding: 128px 80px 0 80px;
+    display: flex;
+    flex-direction: row;
+    gap:105px;
+}
+.infoSection.textBox{
+    width: 60%;
+}
+.narrativeSection{
+    display: flex;
+    flex-direction: column;
+    padding: 174px 80px 101px 80px;
+    gap:127px;
+}
+.narrativeIntro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:74px;
+}
+.narrativeIntro .narrativeInfoBox{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:31px;
+    justify-content: space-between;
+}
+.narrativeTextBox{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.narrativeTextBox p{
+    margin-top: 0;
+}
+.narrativeInfoBox img{
+    height: 100%;
+    max-height:559px;
+    width: auto;
+}
+.narrativeExperience{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:80px;
+    justify-content: center;
+    text-align: center;
+}
+.narrativeExperience p {
+    width: 60%;
+    margin: auto    ;
+}
+.button{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #470510;
+    text-decoration:none;
+    cursor: pointer;
+    margin: 0;
+}
+.button:hover{
+    background-color: #DF1637;
+}
+.hero.histoire {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+.heroimg.histoire {
+    background-position: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.heroText{
+    position: absolute;
+    top: 25%; 
+    left: 80px;          
+    z-index: 2;     
+    width: 37%;     
+    text-align: left;
+}
+.heroText.credits,
+.heroText.histoire {
+    position: absolute;
+    top: 33%; 
+    left: 80px;          
+    z-index: 2;     
+    width: 37%;     
+    text-align: left;
+}
+.heroText.credits p{
+    color: white;
+}
+.hero.credits {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heroimg.credits {
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+.heroText.histoire p {
+    color: white;
+}
+.visualNovelSection{
+    padding: 80px 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+    width: 100%;
+}
+.visualNovelList{
+    display: flex;
+    flex-direction: column;
+    gap:72px;
+    width: 100%;   
+}
+.visualNovelCard{
+    display: flex;
+    flex-direction: column;
+}
+.visualNovelCardText{
+    display: flex;
+    gap:13px;
+}
+.visualNovelCardList{
+    max-width: 100%;
+}
+.visualNovelCardItem{
+    width: 100%;
+    aspect-ratio: 9/18;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #333;
+    background-color: rgb(6, 35, 6);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    position: relative;
+}
+
+.visualNovelCardList {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 20px;
+    width: 100%;
+    flex-direction: row;
+    align-self: stretch;
+}
+.visualNovelCardItem{
+    aspect-ratio: 9/18;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #333;
+    background-color: rgb(6, 35, 6);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.infoSection.histoire{
+    padding: 173px 80px 0 80px;
+}
+
+.subInfoSection{
+    padding: 64px 0 128px 0;
+}
+.subInfoSection h3{
+    padding-bottom: 40px;
+}
+.serieCardList {
+    display: flex;
+    justify-content: space-between; 
+    width: 80%;                   
+    max-width: none;                              
+    box-sizing: border-box;        
+    align-items: flex-start;      
+}
+
+.serieCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;                    
+}
+.creditsSection{
+    padding: 80px 80px 0 80px;
+    display: flex;
+    gap: 65px;
+    flex-direction: column;
+}
+.linkCardList{
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    position: relative;
+}
+.linkCardItem{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.linkCardItem ul{    
+    list-style-image: url('assets/img/BulletPoint.png');
+    padding: 0;
+    justify-content: left;
+}
+.linkCardItem a{
+    text-decoration: none;
+}
+.linkCardItem a:hover{
+
+    color: #DF1637;
+}
+nav img  {
+    width: 180px;
+    height: 40px;
+}
+nav{
+    padding: 0 80px;
+
+}
+footer{
+    padding: 80px 80px 0 80px;
+}
+.footerLinksList ul{
+    list-style-image: url('assets/img/BulletPoint.png');
+}
+.gun{
+    scale: 0.6;
+    bottom: 43%;
+    left: -40%;
+}
+.scriptBox.alfred{
+    bottom: 10px;
+}
+
+
+}
+
+
